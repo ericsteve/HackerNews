@@ -31,11 +31,12 @@ namespace HackerNews.Application.Services
             IEnumerable<BestStory> result = null;
             if (!cache.TryGetValue(CACHE_KEY, out result))
             {
-                result = await hackerNewsService.GetBestStoriesAsync();
+                var bestStories = await hackerNewsService.GetBestStoriesAsync();
+                result = bestStories.OrderByDescending(story => story.Score).Take(storiesToRetrieve);
                 var cacheEntryOptions = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(cacheLimit));
                 cache.Set(CACHE_KEY, result, cacheEntryOptions);
             }
-            return result.OrderByDescending(story => story.Score).Take(storiesToRetrieve);
+            return result;
         }
     }
 }
