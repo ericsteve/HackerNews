@@ -3,3 +3,20 @@
 ################################################################################
 
 /.vs/HackerNews/v16
+/HackerNews.API/bin/Debug/netcoreapp2.2
+/HackerNews.API/.vs/HackerNews
+/HackerNews.API/obj
+/HackerNews.API/HackerNews.API.csproj.user
+/HackerNews.Application/obj
+/HackerNews.Application/bin/Debug/netcoreapp2.2
+/HackerNews.Application.DI/obj
+/HackerNews.Application.DI/bin/Debug
+/HackerNews.Data/obj/Debug/netcoreapp3.1
+/HackerNews.Domain/obj
+/HackerNews.Domain/bin/Debug
+/HackerNews.Infrastructure.CrossCutting/obj
+/HackerNews.Infrastructure.CrossCutting/bin/Debug/netcoreapp2.2
+/HackerNews.Infrastructure.Providers/obj
+/HackerNews.Infrastructure.Providers/bin/Debug/netcoreapp2.2
+/HackerNews.Tests/obj
+/HackerNews.Tests/bin/Debug
