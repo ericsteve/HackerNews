@@ -1,4 +1,4 @@
-﻿using System;
+﻿using HackerNews.Domain.Helpers;
 using System.Collections.Generic;
 
 namespace HackerNews.Domain.Entities
@@ -20,7 +20,7 @@ namespace HackerNews.Domain.Entities
                 PostedBy = By,
                 Title = Title,
                 Score = Score,
-                Time = new DateTime(Time),
+                Time = DateHelper.ConvertToDateTime(Time),
                 Uri = Url,
                 CommentCount = Descendants
             };
